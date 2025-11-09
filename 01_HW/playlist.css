@@ -9,21 +9,23 @@ th {
   background-color: #007BFF;
   color: white;
   padding: 10px;
-  font-size: 20px;
+  font-size: 12px;
 }
 
 td {
+  font-size: 12px;
+  width: 100px;
   border: 1px solid #ccc;
   padding: 10px;
   vertical-align: middle;
 }
 
-iframe {
-  width: 200px;
-  height: 113px;
+td iframe {
+  width: 300px;
+  height: 200px;
+  border: none;
 }
 
-img {
-  width: 120px;
-  height: auto;
+caption {
+  font-size: 18px;
 }
