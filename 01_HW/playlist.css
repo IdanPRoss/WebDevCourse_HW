@@ -41,3 +41,12 @@ caption {
   color: blue;
   font-style: oblique;
 }
+
+.song a {
+  font-weight: bold;
+}
+
+.song a:hover {
+  color: #ff4500;
+  cursor: pointer;
+}
