@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Playlist</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .table_container {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .music_table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 850px;
+            text-align: center;
+        }
+
+        .music_table thead tr {
+            background-color: #333;
+            color: #fff;
+        }
+
+        .music_table th {
+            padding: 18px;
+            font-weight: 600;
+            border-right: 1px solid #333;
+        }
+
+        .music_table th:last-child {
+            border-right: none;
+        }
+
+        .music_table td {
+            padding: 15px;
+            vertical-align: middle;
+            border-bottom: 1px solid #e0e0e0;
+            border-right: 1px solid #e0e0e0;
+            background-color: #fcfcfc;
+            color: #333;
+        }
+
+        .music_table td:last-child {
+            border-right: none;
+        }
+
+        .album_cover {
+            width: 70px;
+            height: 70px;
+            border-radius: 6px;
+            object-fit: cover;
+            display: block;
+            margin: auto;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .audio_wrapper {
+            border: 2px solid #2ecc71;
+            border-radius: 50px;
+            padding: 5px 15px;
+            background-color: #f8f9fa;
+            display: inline-block;
+            width: 280px;
+        }
+
+        audio {
+            width: 100%;
+            height: 32px;
+            outline: none;
+            vertical-align: middle;
+        }
+
+        audio::-webkit-media-controls-enclosure {
+            background-color: #f8f9fa;
+        }
+
+        .download_link {
+            color: blue;
+            text-decoration: underline;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .download_link:hover {
+            color: darkblue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="table_container">
+        <table class="music_table">
+            <thead>
+                <tr>
+                    <th>Cover</th>
+                    <th>Title</th>
+                    <th>Artist</th>
+                    <th>Year</th>
+                    <th>Play</th>
+                    <th>Download</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="AudioFiles/song1.jpg" alt="Song 1 Cover" class="album_cover">
+                    </td>
+                    <td>Synthwave</td>
+                    <td>Dj Edmn</td>
+                    <td>2025</td>
+                    <td>
+                        <div class="audio_wrapper">
+                            <audio controls src="AudioFiles/song1.mp3"></audio>
+                        </div>
+                    </td>
+                    <td>
+                        <a href="AudioFiles/song1.mp3" class="download_link" download>Download</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img src="AudioFiles/song2.jpg" alt="Song 2 Cover" class="album_cover">
+                    </td>
+                    <td>Dance</td>
+                    <td>Dj Edm</td>
+                    <td>2025</td>
+                    <td>
+                        <div class="audio_wrapper">
+                            <audio controls src="AudioFiles/song2.mp3"></audio>
+                        </div>
+                    </td>
+                    <td>
+                        <a href="AudioFiles/song2.mp3" class="download_link" download>Download</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>
